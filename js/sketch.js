@@ -26,6 +26,8 @@ function preload() {
 function mousePressed() {
     if (phase === 'start') {
         phase = 'game';
+    } else if (phase === 'game') {
+        character.jump();
     }
 }
 
